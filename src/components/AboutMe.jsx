@@ -1,5 +1,7 @@
 import { useEffect, useRef } from 'react'
 
+const base = import.meta.env.BASE_URL
+
 const info = [
   { label: 'Full Name', value: 'Heris Kurniawan' },
   { label: 'Email', value: 'heris_kurniawan@yahoo.com' },
@@ -41,7 +43,7 @@ export default function AboutMe() {
           <div className="about-image fade-in-left">
             <div className="about-image-wrapper">
               <img
-                src="/assets/img/myFoto.JPG"
+                src={`${base}assets/img/myFoto.JPG`}
                 alt="Heris Kurniawan"
                 className="about-image-photo"
               />

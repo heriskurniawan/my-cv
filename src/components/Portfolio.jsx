@@ -1,12 +1,16 @@
 import { useEffect, useRef } from 'react'
 
+const base = import.meta.env.BASE_URL
+
+const img = (path) => `${base}assets/img/${path}`
+
 const projects = [
   {
     title: 'Icofr Management System (IMS)',
     tag: 'Mobile App',
     description: 'An internal control system specifically designed to ensure that financial statements prepared by the company are accurate, complete, transparent, and compliant with applicable accounting standards.',
     tech: ['.NET MAUI', 'Balzor', 'SQL Server', 'Rest Api'],
-    image: '/assets/img/portfolio_ims.jpeg',
+    image: img('portfolio_ims.jpeg'),
     link: '#',
   },
   {
@@ -14,7 +18,7 @@ const projects = [
     tag: 'App',
     description: 'The Grant Management System (GMS) application is a web-based application used to manage the receipt of grants.',
     tech: ['.NET 8', 'Blazor', 'Syncfusion', 'SQL Server'],
-      image: '/assets/img/portfolio_gms.jpeg',
+      image: img('portfolio_gms.jpeg'),
     link: '#',
   },
   {
@@ -22,7 +26,7 @@ const projects = [
     tag: 'Web App',
     description: 'The Visitor Logbook application is a guestbook application and is used for booking meetings online.',
     tech: ['.NET 6', 'Blazor Server', 'Javascript', 'Mudblazor'],
-         image: '/assets/img/portfolio_visitor.jpeg',
+         image: img('portfolio_visitor.jpeg'),
     link: '#',
   },
   {
@@ -30,7 +34,7 @@ const projects = [
     tag: 'Full Stack',
     description: 'The Integrated Bank System application is a trade finance application for processing business transactions such as letters of credit, bank guarantees, claims, etc.',
     tech: ['.NET 8', 'Syncfusion', 'Blazor', 'SQL Server'],
-           image: '/assets/img/portfolio_ibs.jpeg',
+           image: img('portfolio_ibs.jpeg'),
     link: '#',
   },
   {
@@ -38,7 +42,7 @@ const projects = [
     tag: 'Web App',
     description: 'The Corporate Administration System application is an application for managing BOD/BOC data, active terms of office, notary deeds, and shareholder resolutions.',
     tech: ['.NET 8', 'Syncfusion', 'Blazor', 'SQL Server'],
-        image: '/assets/img/portfolio_cas.jpeg',
+        image: img('portfolio_cas.jpeg'),
     link: '#',
   },
   {
@@ -46,7 +50,7 @@ const projects = [
     tag: 'Web App',
     description: 'The Investor Relations Hub application is an application for managing investor data and recording shareholders and bondholders.',
       tech: ['.NET 8', 'Syncfusion', 'Blazor', 'SQL Server'],
-        image: '/assets/img/portfolio_irh.jpeg',
+        image: img('portfolio_irh.jpeg'),
     link: '#',
   },
 ]
